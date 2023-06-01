@@ -1,0 +1,258 @@
+@font-face{
+    font-family: raleway-italic;
+    src: url(./fuentes/Raleway-Italic.ttf);
+}
+@font-face{
+    font-family: raleway-regular;
+    src: url(./fuentes/Raleway-Regular.ttf);
+}
+@font-face{
+    font-family: raleway-thin;
+    src: url(./fuentes/Raleway-Thin.ttf);
+}
+html{
+    overflow-x: hidden;
+}
+/**Fondo**/
+.background{
+    background-image: url(/fondos/vias-tren.jpg);
+    background-repeat: no-repeat;
+    height: 101vh;
+    margin:0px -10px 0px -8px;
+}
+
+/**Cabecera**/
+.cabecerap{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin:-8px;
+    padding:5px;
+    font-family: raleway-regular;
+    border: 1px solid #fff;
+}
+.logotipo{
+    width: 33.3%;
+}
+.titulo{
+    align-items: center;
+    text-align: center;
+    width: 33.3%;
+    
+
+}
+.recursos{
+    text-align:center;
+    border:center;
+    width: 33.3%;
+
+}
+/**Fondo, Versiculo yseccion1**/
+.section1{
+    margin:25vh 10vh 0vh 0vh ;
+}
+.versiculo{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    align-content: center;
+    flex-direction: row;
+}
+.versiculo p{
+    text-align:justify;
+    font-family: raleway-italic;
+    font-size:20px;
+    line-height: 1.5;
+    color:#fff;
+}
+/**Iconos**/
+.links{
+    display:flex;
+    justify-content:flex-end;
+    padding:10px 280px 0px 0px;
+}
+.face, .insta{
+    width: 50px;
+    padding:15px;
+}
+a{ 
+    display:inline;
+    color:black;
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:line-through;
+    color:black;
+}
+/**Sección 2**/
+.section2{
+    display:flex;
+    height: 45vh;
+    background-color: red;
+    margin:-5px -9px -2px -8px;
+    text-decoration: none;
+    
+}
+.padre{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width: 100%;
+    background-color:#3B5249;
+}
+.mision{
+    text-align: center;
+    width: 40%;
+    margin-left:70px;
+    border-radius:25px;
+}
+.contenido{
+    display:flex;
+    width: 30%;
+    padding:75px 90px 70px 90px;
+    background-color:#90B77D;
+    margin-left: 450px;
+    border-radius:25px 25px 25px 25px;
+}
+.descipcion{
+    color:black;
+    font-family:  raleway-regular;
+    font-size:19px;
+    text-align: center;
+}
+/**pie de pagina**/
+.piedepagina{
+    height: 10vh;
+}
+.piep{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+.facef, .instaf{
+    width: 35px;
+    display:inline;
+    padding:25px 20px 0px 20px;
+}
+/**¡Phone xr**/
+@media(max-width:414px){
+    .background{
+        width: 46.4vh;
+    }
+    .titulo, .recursos{
+        color:white;
+    }
+    a{
+        color:white;
+    }
+    a:hover{
+        color:white;
+    }
+    .versiculo p{
+        font-size:15px;
+    }
+    .versiculo{
+        margin-left:60px;
+    }
+    .links{
+        margin-left:25vh;
+    }
+    .contenido{
+        margin:10px 10px 0px 30px;
+        padding:20px;
+        width: 35vh;
+    }
+    .descipcion{
+        text-align: center;
+    }
+    
+}
+/**¡Phone SE**/
+
+@media (max-width:375px){
+    .background{
+        width: 56vh;
+    }
+    .versiculo{
+        padding:0;
+        margin:-125px 10px 0px 50px;
+    }
+    .texto{
+        font-size:20px;
+    }
+    .links{
+        padding:0px 0px 0px 15px;
+
+    }
+    .section2{
+        width: 56vh;
+    }
+    .padre{
+        width: 56vh;
+    }
+    .contenido{
+        margin:0px 0px 0px 40px;
+        
+    }
+    .footer{
+        width: 56vh;
+    }
+    .piep{
+        width: 56vh;
+    }
+}
+/**¡Phone 12 Pro**/
+@media (max-width:390px) {
+    
+}
+
+/**Responsive 375px**/
+@media (max-width:375px){
+    .cabecerap{
+        width: 57.7vh;
+    }
+    .background{
+        width: 57.7vh;
+    }
+    .padre{
+        width: 75vh;
+    }
+    .section2{
+        width: 57.7vh;
+    }
+    .footer{
+        height: -10vh;
+    }
+}
+/**Responsive 768px**/
+@media (max-width:768px){
+    .cabecerap{
+        width:114.3vh;
+    }
+    .background{
+        width:114.3vh;
+    }
+    .titulo{
+        color:white;
+    }
+    .section2{
+        width: 114.3vh;
+    }
+    .padre{
+        width: 114.3vh;
+    }
+    .contenido{
+        margin:0vh 0vh 0vh 40vh;
+        padding:20px 30px 20px 30px;
+
+    }
+}
+/**Responsive 1440px**/
+@media (max-width:1440px){
+    .contenido{
+        padding:30px;
+    }
+}
+/**Responsive 2560px**/
